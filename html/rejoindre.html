@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<head>
+		<link href="..\css\my_style.css" rel="stylesheet" >
+		<title> C.V. Carlos Ramirez </title>
+		<meta name="keywords" content="CV Carlos Ramirez, informatique, informaticien">
+	</head>
+
+  <header> 
+  <div id="priorite_abso">
+	<hr align="left" SIZE="36" width="100%" style=" border:0;"; />
+
+	<ul id="button" >
+		<li><a href="..\index.html">Accueil</a></li>
+		<li><a href="..\html\experience.html">&Eacute;xperience</a></li>
+		<li><a href="..\html\experience.html#educat">&Eacute;ducation</a></li>
+		<li><a href="rejoindre.html">Me rejoindre</a></li>
+	</ul>
+	</br></br>		
+	
+	</div>
+  </header>
+		
+	<body>
+		 <br />
+	
+		<form action="" method="get"
+		name = "formVisiteur">
+
+		<label class="label_form"> Nom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:    <label/>
+		<Input class="cotenu_form" style="width:220px;" type= "text" name = "db_nom" /> <br /> <br />
+
+		<label class="label_form"> Courriel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <label/>
+		<Input class="cotenu_form" style="width:220px;" type = "text" name = "bd_courriel" /> <br /> <br />
+
+		<label class="label_form"> Sujet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <label/>
+		<Input class="cotenu_form" style="width:220px;" type = "text" name = "bd_sujet" /> <br /> <br />
+
+		<label class="label_form"> Contenu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <label/>
+		<textarea class="cotenu_form" style="width:308px;" name = "bd_contenu"> </textarea>
+		<br />
+		<br />
+
+		<Input class="label_form" type = "submit" value ="Envoyer"  />
+
+		</form>
+		</br>
+		</br>
+		<p class="footer" ><b>1476, rue Saint-Jean </b></p>
+		<p class="footer" ><b>Sherbrooke, Quebec. Telephone 819 574 1059</b></p>
+		<p class="footer" ><b>carlos.ramirez@usherbrooke.ca</b></p>
+		<p></p>
+
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : 'YOUR_APP_ID', // App ID
+          channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true  // parse XFBML
+        });
+        FB.api('/me', function(user) {
+          if (user) {
+            var image = document.getElementById('image');
+            image.src = 'http://graph.facebook.com/' + user.id + '/picture';
+            var name = document.getElementById('name');
+            name.innerHTML = user.name
+          }
+        });
+      };
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    </script>	
+	</body>
+	
+
+</html>
+
+
